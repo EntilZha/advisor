@@ -2,9 +2,8 @@ import json
 import random
 
 from suggestion.models import Study
-from suggestion.models import Trial
 from suggestion.models import TrialMetric
-from base_algorithm import BaseEarlyStopAlgorithm
+from suggestion.algorithm.base_algorithm import BaseEarlyStopAlgorithm
 
 
 class NoEarlyStopAlgorithm(BaseEarlyStopAlgorithm):

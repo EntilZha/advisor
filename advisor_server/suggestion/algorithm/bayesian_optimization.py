@@ -7,13 +7,11 @@ import random
 import numpy as np
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.gaussian_process.kernels import Matern
-from scipy.stats import norm
-from scipy.optimize import minimize
 
 from suggestion.models import Study
 from suggestion.models import Trial
-from base_algorithm import BaseSuggestionAlgorithm
-from random_search import RandomSearchAlgorithm
+from suggestion.algorithm.base_algorithm import BaseSuggestionAlgorithm
+from suggestion.algorithm.random_search import RandomSearchAlgorithm
 
 
 class BayesianOptimizationDemo(object):

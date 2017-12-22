@@ -2,10 +2,8 @@ import json
 
 from django.test import TestCase
 
-from suggestion.models import Study
-from suggestion.models import Trial
-from base_algorithm import BaseSuggestionAlgorithm
-from base_algorithm import BaseEarlyStopAlgorithm
+from suggestion.algorithm.base_algorithm import BaseSuggestionAlgorithm
+from suggestion.algorithm.base_algorithm import BaseEarlyStopAlgorithm
 
 
 class RandomSearchAlgorithmTest(TestCase):

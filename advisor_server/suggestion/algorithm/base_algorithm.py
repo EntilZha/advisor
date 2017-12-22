@@ -1,7 +1,3 @@
-from suggestion.models import Study
-from suggestion.models import Trial
-
-
 class BaseSuggestionAlgorithm(object):
   def get_new_suggestions(self, study_id, trials, number=1):
     """
