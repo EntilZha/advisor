@@ -72,7 +72,7 @@ class AdvisorClient(object):
     for trial in trials:
       if trial.status != "Completed":
         return False
-    max_trials = json.loads(study.study_confiration)['maxTrials']
+    max_trials = json.loads(study.study_configuration)['maxTrials']
     n_complete_trials = sum(1 for t in trials if t.status == 'Completed')
     if n_complete_trials < max_trials:
         return False
